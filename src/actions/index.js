@@ -4,6 +4,6 @@ export const signIn = () =>({
     type: types.SIGN_IN
 })
 
-export const signOUT = () =>({
+export const signOut = () =>({
     type: types.SIGN_OUT
 })
