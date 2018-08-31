@@ -21,6 +21,9 @@ class Nav extends Component {
                             <Link to='/movie-quote'>Movie Quote</Link>
                         </li>
                         <li>
+                            <Link to='/sign-up'>Sign Up</Link>
+                        </li>
+                        <li>
                             <button className = 'btn blue darken-2'> Sign In </button>
                         </li>
                     </ul>
