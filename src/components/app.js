@@ -8,6 +8,8 @@ import MovieQuote from './movie_quotes';
 import SignUp from './sign_up';
 import 'materialize-css/dist/css/materialize.min.css';
 import auth from '../hoc/auth';
+import SignIn from './sign_in';
+import redirect from '../hoc/redirect';
 
 
 const App = () => (
@@ -18,7 +20,8 @@ const App = () => (
             <Route path = '/about' component ={About}/>
             <Route path = '/secret-list' component ={auth(SecretList)}/>
             <Route path = '/movie-quote' component ={MovieQuote}/>
-            <Route path = '/sign-up' component ={SignUp}/>
+            <Route path = '/sign-up' component ={redirect(SignUp,'/about') }/>
+            <Route path = '/sign-in' component = { redirect(SignIn, '/movie-quote') } />
             </div>
     </div>
 );
